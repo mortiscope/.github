@@ -1,6 +1,6 @@
 <div align="center">
   <br />
-  <img src="../assets/mortiscope-banner.png" alt="Mortiscope Banner" width="800" />
+  <img src="../assets/mortiscope-banner.png" alt="Mortiscope Banner" width="100%" />
   <br /><br />
   <p>A collaborative research-driven partnership established to host the code for a system focused on Post-Mortem Interval estimation using <em>Chrysomya megacephala</em>.</p>
 </div>
