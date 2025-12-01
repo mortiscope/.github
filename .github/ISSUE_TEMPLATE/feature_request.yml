@@ -1,0 +1,122 @@
+name: Feature Request
+description: Suggest a new feature or enhancement for Mortiscope
+title: "[Feature]: "
+labels: ["enhancement", "needs-triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Mortiscope is a two-person thesis project. While we appreciate all suggestions, direct code contributions from external developers are currently closed. However, we welcome feedback and feature ideas via this form.
+
+  - type: dropdown
+    id: repository
+    attributes:
+      label: Which repository would this feature affect?
+      description: Select the repository for this feature
+      options:
+        - mortiscope-api
+        - mortiscope-web
+        - Multiple repositories
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: feature-type
+    attributes:
+      label: Feature Type
+      description: What type of feature is this?
+      options:
+        - New Feature
+        - Enhancement to Existing Feature
+        - Performance Improvement
+        - Developer Experience
+        - Documentation
+        - Infrastructure
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: Is your feature request related to a problem? Please describe.
+      placeholder: A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe the solution you'd like to see
+      placeholder: A clear and concise description of what you want to happen...
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Describe any alternative solutions or features you've considered
+      placeholder: What other approaches could solve this problem?
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this feature to you?
+      options:
+        - Critical (Blocking usage)
+        - High (Significantly improves experience)
+        - Medium (Nice to have)
+        - Low (Minor improvement)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: research-impact
+    attributes:
+      label: Research Impact
+      description: Would this feature benefit forensic research outcomes?
+      options:
+        - Yes - Directly improves PMI estimation accuracy
+        - Yes - Enhances analysis capabilities
+        - Yes - Improves workflow efficiency
+        - Neutral - UX/DX improvement only
+        - Not applicable
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use Case
+      description: Describe how you would use this feature
+      placeholder: |
+        Provide a specific example or scenario where this feature would be useful...
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Add any other context, mockups, or screenshots about the feature request here
+      placeholder: Any additional information that might help...
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Pre-submission Checklist
+      description: Please verify the following before submitting
+      options:
+        - label: I have searched existing issues to ensure this is not a duplicate
+          required: true
+        - label: I have provided all the information requested in this form
+          required: true
+        - label: I understand this is a thesis project and feature implementation is at the maintainers' discretion
+          required: true
+        - label: I have read the [Code of Conduct](../CODE_OF_CONDUCT.md)
+          required: true

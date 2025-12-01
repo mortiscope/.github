@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 General Questions & Discussions
+    url: https://github.com/orgs/mortiscope/discussions
+    about: Ask questions and discuss ideas with the community
+  - name: 🔐 Security Vulnerability Report
+    url: https://github.com/mortiscope/.github/blob/main/SECURITY.md
+    about: Report security vulnerabilities privately (do not open a public issue)
+  - name: 📚 Mortiscope API Documentation
+    url: https://github.com/mortiscope/mortiscope-api#readme
+    about: View the API setup guide and documentation
+  - name: 🌐 Mortiscope Web Documentation
+    url: https://github.com/mortiscope/mortiscope-web#readme
+    about: View the Web application setup guide and documentation
